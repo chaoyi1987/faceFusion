@@ -1,0 +1,566 @@
+/* 重置默认样式 start */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+p {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica";
+  -webkit-text-size-adjust: 100%;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+em,
+strong,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+input,
+button,
+select {
+  border: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding: 0;
+}
+html,
+body,
+#app,
+#addFriends,
+#home,
+#Filename,
+#result,
+#chat-room {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 添加好友 */
+#addFriends {
+  background: url(../images/addFriends_bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+#addFriends .time {
+  height: 8.832rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+#addFriends .time .time_data {
+  font-size: 2.563rem;
+}
+#addFriends .time .Lunarday {
+  font-size: 0.768rem;
+}
+#addFriends .friends {
+  width: 100%;
+  height: auto;
+}
+#addFriends .friends .apply {
+  height: 5.20533333rem;
+  padding: 0 1.70666667rem 0;
+}
+#addFriends .friends .apply a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  border-bottom: 2px solid #999999;
+}
+#addFriends .friends .apply a .wechat {
+  height: 1.32266667rem;
+  margin-top: 0.38266667rem;
+  margin-bottom: 0.38266667rem;
+}
+#addFriends .friends .apply a .wechat img {
+  width: 0.86666667rem;
+  height: 0.86666667rem;
+  vertical-align: middle;
+}
+#addFriends .friends .apply a .wechat span {
+  line-height: 1.32266667rem;
+  font-size: 0.68266667rem;
+  color: #fff;
+  vertical-align: middle;
+}
+#addFriends .friends .apply a .add_info img {
+  float: left;
+  width: 2.09066667rem;
+  height: 2.09066667rem;
+}
+#addFriends .friends .apply a .add_info div {
+  float: left;
+  margin-left: 0.42666667rem;
+}
+#addFriends .friends .apply a .add_info div p {
+  line-height: 0.768rem;
+  font-size: 0.55466667rem;
+}
+#addFriends .friends .apply a .add_info div p:nth-of-type(2) {
+  text-indent: 1.536rem;
+}
+/*个人信息内容*/
+#home {
+  background-color: #f5f5f5;
+}
+#home .SayHello {
+  height: 2.432rem;
+  /*padding: 0.64rem 0.64rem;*/
+  background-color: #f5f5f5;
+  padding: 0rem 0rem 0.64rem;
+}
+#home .SayHello ul {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+}
+#home .SayHello ul li {
+  font-size: 0.64rem;
+  color: #999;
+  padding: 0 0.64rem;
+}
+#home .SayHello .reply {
+  display: block;
+  width: 3.4rem;
+  height: 1.20rem;
+  line-height: 1.664rem;
+  font-size: 0.6rem;
+  color: #000;
+  text-align: center;
+  margin: 0.64rem auto 0;
+  background-color: #f8f8f8;
+  border-radius: 0.17066667rem;
+  -webkit-border-radius: 0.17066667rem;
+}
+#home .SetUp {
+  display: block;
+  width: 100%;
+  height: 1.49333333rem;
+  line-height: 1.49333333rem;
+  font-size: 0.68266667rem;
+  color: #333;
+  text-indent: 0.53333333rem;
+  background-color: #fff;
+  border-top: 2px solid #e5e4e9;
+  border-bottom: 2px solid #e5e4e9;
+}
+#home .region {
+  height: 3.28533333rem;
+  background-color: #fff;
+  margin-top: 0.64rem;
+  padding: 0 0.64rem;
+  border-top: 2px solid #e5e4e9;
+  border-bottom: 2px solid #e5e4e9;
+}
+#home .region div {
+  height: 1.62133333rem;
+  line-height: 1.62133333rem;
+  font-size: 0.68266667rem;
+}
+#home .region div span {
+  margin-left: 1.96266667rem;
+}
+#home .region div:nth-of-type(1) {
+  border-bottom: 2px solid #e5e4e9;
+}
+#home .agree {
+  display: block;
+  width: 13.78133333rem;
+  height: 1.664rem;
+  line-height: 1.664rem;
+  font-size: 0.72533333rem;
+  color: #fff;
+  text-align: center;
+  margin: 0.64rem auto 0;
+  background-color: #19ad19;
+  border-radius: 0.17066667rem;
+  -webkit-border-radius: 0.17066667rem;
+}
+#vux_view_box_body .weui-panel {
+  margin-top: 0.64rem;
+  border-top: 2px solid #e5e4e9;
+  border-bottom: 2px solid #e5e4e9;
+}
+#vux_view_box_body .weui-panel__bd a {
+  padding: 0.64rem;
+}
+#vux_view_box_body .weui-panel__bd .weui-media-box__hd {
+  width: 2.56rem;
+  height: 2.56rem;
+}
+#vux_view_box_body .weui-panel__bd .weui-media-box__hd  img{
+  width: 2.56rem;
+  height: 2.56rem;
+  border-radius: 0.25rem;
+}
+#vux_view_box_body .weui-panel__bd .weui-media-box__bd .weui-media-box__title {
+  font-size: 0.68266667rem;
+  margin-top: 0px;
+}
+#vux_view_box_body .weui-panel__bd .weui-media-box__bd .weui-media-box__desc {
+  font-size: 0.59733333rem;
+}
+/* 聊天内容 */
+.ChatRoom {
+  background-color: #f5f5f5;
+}
+.ChatRoom .swiper-container {
+  height: 94%;
+  overflow: hidden;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room {
+  width: 90%;
+  padding: 0.85333333rem;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .left,
+.ChatRoom .swiper-container .swiper-wrapper .room .right {
+  position: relative;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .left img,
+.ChatRoom .swiper-container .swiper-wrapper .room .right img {
+  width: 1.70666667rem;
+  height: 1.70666667rem;
+  margin-top: 0.42666667rem;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .left div,
+.ChatRoom .swiper-container .swiper-wrapper .room .right div {
+  padding: 0.42666667rem 0;
+  word-wrap: break-word;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .left div p,
+.ChatRoom .swiper-container .swiper-wrapper .room .right div p {
+  line-height: 0.72533333rem;
+  font-size: 0.512rem;
+  padding: 0.42666667rem;
+  border-radius: 0.17066667rem;
+  -webkit-border-radius: 0.17066667rem;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .left img {
+  float: left;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .left div {
+  float: left;
+  width: 11.09333333rem;
+  height: auto;
+  margin-left: 0.42666667rem;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .left div p {
+  display: inline-block;
+  background-color: #fff;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .right img {
+  float: right;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .right div {
+  float: right;
+  width: 11.09333333rem;
+  height: auto;
+  margin-right: 0.42666667rem;
+}
+.ChatRoom .swiper-container .swiper-wrapper .room .right div p {
+  float: right;
+  background-color: #92d050;
+}
+.ChatRoom .text-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.664rem;
+  padding: 0.32rem 0;
+  background-color: #ffffff;
+  z-index: 3;
+}
+.ChatRoom .text-input input {
+  width: 11.09333333rem;
+  height: 1.45066667rem;
+  font-size: 0.59733333rem;
+  text-indent: 0.64rem;
+  margin-left: 2.56rem;
+  border: 2px solid #e5e4e9;
+  border-radius: 0.17066667rem;
+  -webkit-border-radius: 0.17066667rem;
+}
+.ChatRoom .text-input span {
+  display: inline-block;
+  width: 1.45066667rem;
+  height: 1.45066667rem;
+  line-height: 1.45066667rem;
+  font-size: 0.68266667rem;
+  text-align: center;
+  margin-left: 0.42666667rem;
+}
+/*预约*/
+.about {
+  background: url(../images/about_bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.about .about-info {
+  position: absolute;
+  bottom: 0.98133333rem;
+  left: 50%;
+  width: 12.8rem;
+  height: 14.72rem;
+  padding: 0.96rem 0.85333333rem 1.344rem;
+  background-color: #fff;
+  margin-left: -7.25333333rem;
+}
+.about .about-info div {
+  height: 3.24266667rem;
+}
+.about .about-info div p {
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+}
+.about .about-info div p span {
+  display: inline-block;
+  margin-left: 1.49333333rem;
+  color: mediumvioletred;
+}
+.about .about-info div input {
+  width: 100%;
+  height: 1.6rem;
+  font-size: 0.64rem;
+  text-indent: 0.64rem;
+  background-color: #f7f7eb;
+  border: 2px solid #e6d3c8;
+}
+.about .about-info button {
+  display: block;
+  width: 8.66133333rem;
+  height: 2.47466667rem;
+  font-size: 0.64rem;
+  color: #5e4121;
+  background: url(../images/submit_bg.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 2.26133333rem auto 0;
+}
+.about .position {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.about .position p {
+  width: 11.09333333rem;
+  height: 1.664rem;
+  line-height: 1.664rem;
+  font-size: 0.64rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.17066667rem;
+  -webkit-border-radius: 0.17066667rem;
+  margin: 0 auto;
+}
+.Filename {
+  background: url(../images/Filename_bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+/*上传图片*/
+.Filename .people {
+  width: 100%;
+  height: 12.58666667rem;
+  text-align: center;
+  margin-top: 5.48266667rem;
+}
+.Filename .people img {
+  width: 15.33866667rem;
+  height: 12.58666667rem;
+}
+.Filename .upload {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8.78933333rem;
+  text-align: center;
+}
+.Filename .upload .title {
+  display: inline-block;
+  width: 14.44266667rem;
+  height: 3.62666667rem;
+  background: url(../images/title.png) no-repeat;
+  background-size: 100% 100%;
+}
+.Filename .upload button {
+  position: relative;
+  top: 0.64rem;
+  width: 11.09333333rem;
+  height: 2.34666667rem;
+  font-size: 0.896rem;
+  color: #fff;
+  background-color: #104f96;
+}
+.Filename .upload button input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.Filename .upload p {
+  line-height: 0.81066667rem;
+  font-size: 0.64rem;
+  color: #002e5f;
+  margin-top: 0.85333333rem;
+}
+.Filename .file_load {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.Filename .file_load div {
+  width: 6.4rem;
+  height: 4.26666667rem;
+  background: url(../images/loading.gif) no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.result {
+  background-color: #fff8e5;
+}
+.result .frame {
+  position: relative;
+  width: 14.54933333rem;
+  height: 19.712rem;
+  background: url(../images/frame.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 1.536rem auto 0;
+}
+.result .frame .people {
+  position: relative;
+  display: block;
+  width: 13.73866667rem;
+  height: 13.39733333rem;
+  margin: 0 auto;
+  padding-top: 2.112rem;
+}
+.result .frame .people img {
+  pointer-events: none;
+}
+.result .frame .people img:nth-of-type(1) {
+  width: 9.344rem;
+  height: 100%;
+}
+.result .frame .people img:nth-of-type(2) {
+  position: absolute;
+  top: 2.56rem;
+  right: 0.10666667rem;
+  width: 8.53333333rem;
+  height: 12.20266667rem;
+}
+.result .frame .index {
+  position: absolute;
+  bottom: 4.48rem;
+  right: 0.74666667rem;
+  width: 5.03466667rem;
+  height: 2.944rem;
+  line-height: 2.24rem;
+  font-size: 0.768rem;
+  color: #c0610c;
+  text-indent: 0.896rem;
+  background: url(../images/index.png) no-repeat right center;
+  background-size: 100% 100%;
+}
+.result .frame .index i {
+  float: right;
+  font-size: 1.19466667rem;
+  margin-right: 0.74666667rem;
+}
+.result .frame .QR {
+  position: absolute;
+  bottom: 0.29866667rem;
+  left: 0.42666667rem;
+  width: 3.92533333rem;
+  height: 3.584rem;
+  text-align: center;
+}
+.result .frame .QR img {
+  display: inline-block;
+  width: 2.77333333rem;
+  height: 2.77333333rem;
+}
+.result .frame .QR p {
+  line-height: 0.85333333rem;
+  font-size: 0.46933333rem;
+  color: #428eb8;
+}
+.result .save {
+  display: none;
+}
+.result .save img {
+  width: 100%;
+  height: 100%;
+}
+.result .res-btn {
+  position: absolute;
+  bottom: 1.28rem;
+  left: 0;
+  width: 100%;
+  height: 2.688rem;
+  text-align: center;
+}
+.result .res-btn p {
+  display: inline-block;
+  width: 5.504rem;
+  height: 1.28rem;
+  background: url(../images/pres.png) no-repeat;
+  background-size: 100% 100%;
+}
+.result .res-btn a {
+  display: inline-block;
+  width: 5.84533333rem;
+  height: 1.152rem;
+  line-height: 1.152rem;
+  font-size: 0.59733333rem;
+  color: #fff;
+  background: url(../images/btn-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+#canvas {
+  display: none;
+}
