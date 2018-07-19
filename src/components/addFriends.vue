@@ -81,6 +81,7 @@
             touchstart(index) {
               this.store.setCookit("headImg",$(".apply").eq(index).find(".add_info img").attr('src'),2);
               this.store.setCookit("name",$(".apply").eq(index).find(".add_info div").find("p i").text(),2);
+              this.store.setCookit("code",index);
             }
         }
     }

@@ -35,8 +35,16 @@
       </div>
       <!-- 上传图片 -->
       <div class="Filename position" v-if="scen.Filename">
+        <div class="model">
+          <div class="model1"></div>
+          <div class="model2"></div>
+          <div class="model3"></div>
+        </div>
         <div class="people">
           <img :src="img.people" alt="" />
+        </div>
+        <div class="people1">
+          <img :src="img.people1" alt="" />
         </div>
         <div class="upload">
           <div class="title"></div>
@@ -84,11 +92,13 @@
 </template>
 
 <script>
-  let [timer,parStr] = [null,""];
-  let textArr = ["很高兴认识你！","恩恩，夏天太热了，只能在家里","我预约了《天乩》手游，据说很好玩，要不要陪我一起玩啊"];
 
-  import people from "@/common/images/people.png"
-  import people2 from "@/common/images/people2.png"
+  let [timer,parStr] = [null,""];
+  let textArr = ["很高兴认识你！","有没有看我主演的《天乩之白蛇传说》~","这部剧真的很不错哦。我最近即将新官儿上任，成为《天乩之白蛇传说》同名手游里的首席设计官","首席服务官，并且亲手设计了一套游戏时装想邀请你试穿一下，不知道你方不方便呐？","并且亲手准备了一项神秘服务想请你体验，不知道你方不方便呐？","哈哈，果然是自乩人，不如留个电话给我，我教你如果到游戏中体验我设计的时装吧。","我教你如何体验这项神秘服务吧","收到~聊得如此愉快，必须得合影留念啊"];
+
+  import people from "@/common/images/people2.png"
+  import people1 from "@/common/images/bb1.png"
+  import people2 from "@/common/images/bb1.png"
   import QR from "@/common/images/QR.png"
 
   import html2canvas from "html2canvas"
@@ -112,6 +122,7 @@
               //上传图片合成模板
               img:{
                 people,
+                people1,
                 people2,
                 QR,
                 imgUrl:null
@@ -206,7 +217,6 @@
                 clearInterval(timer);
               },2000);
             }
-
           },
           //上传图片装成base64格式
           touchend() {
@@ -326,12 +336,31 @@
             this.submit.onOff = false;
             this.scen.about = false;
             this.scen.Filename = true;
+            this.model();
           }).catch((error) => {
               console.log(error);
           });
 
             console.log(name,sex,tel);
           },
+          model(){
+              $(".model1").scc=({"margin-top":"0.1rem",
+                "border": "0.2rem solid #ffffff"})
+              let code = this.$store.state.getCookie('code');
+              var sex = 2;
+              //明星为杨紫
+              if(!code){
+                if(sex == 1){
+
+                }
+              }
+              else{
+                if(sex == 1){
+
+                }
+              }
+
+            },
           //获取焦点清除定时器
           foucs() {
             clearInterval(timer);
@@ -350,4 +379,5 @@
           }
         }
     }
+
 </script>

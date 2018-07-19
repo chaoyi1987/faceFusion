@@ -411,6 +411,26 @@ body,
   background-color: #fff8e5;
 }
 /*上传图片*/
+.model div{
+  width: 2rem ;
+  height: 1rem;
+  float: right;
+  margin-right: 0.8rem;
+  margin-top: 0.3rem;
+}
+.model1{
+  background: #fde39f;
+}
+.model2{
+   background: #ffa4bd;
+ }
+.model3{
+  background: #a8bdf9;
+}
+.model div:hover{
+  margin-top: 0.1rem;
+  border: 0.2rem solid #ffffff;
+}
 .Filename .people {
   width: 14.50666667rem;
   height: 19.712rem;
@@ -420,9 +440,20 @@ body,
   background-size: 100% 100%;
 }
 .Filename .people img {
-  width: 13.61066667rem;
+  width: 9.61066667rem;
   height: 13.86666667rem;
   margin-top: 1.55733333rem;
+  float: left;
+  margin-left: 0.4rem;
+}
+.Filename .people1 img {
+  width: 12.7rem;
+  height: 15.3rem;
+}
+.Filename .people1{
+  position: absolute;
+  top: 1.6rem;
+  left: 2.1rem;
 }
 .Filename .upload {
   position: absolute;
