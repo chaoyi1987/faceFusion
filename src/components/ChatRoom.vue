@@ -65,8 +65,11 @@
             <input type="text" value="" name="" />
           </div>
           <div class="info-sex">
-            <p>性别 <span v-show="layer.sex">请输入您的性别</span></p>
-            <input type="text" value="" name="" />
+            <p>性别 </p>
+            <select v-model='layer.sex' >
+              <option value='1' selected="selected">男</option>
+              <option value='2'>女</option>
+            </select>
           </div>
           <div class="info-tel">
             <p>手机号码 <span v-show="layer.tel">{{layer.telText}}</span></p>
@@ -111,7 +114,7 @@
               //提交预约信息提醒
               layer:{
                 name:false,
-                sex:false,
+                sex:1,
                 tel:false,
                 telText:null
               },
@@ -270,7 +273,7 @@
           },
           //预约表单提交
           Submit() {
-            let [name,sex,tel] = [$(".info-name input").val(),$(".info-sex input").val(),$(".info-tel input").val()];
+            let [name,sex,tel] = [$(".info-name input").val(),$(".info-sex select").val(),$(".info-tel input").val()];
             let regu = "^[ ]+$";//空格的正则
             let re = new RegExp(regu);
             let myreg = "^[1][3,4,5,7,8,9][0-9]{9}$";//电话号码正则

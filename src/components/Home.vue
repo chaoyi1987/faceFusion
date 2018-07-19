@@ -1,5 +1,5 @@
 <template>
-    <div id="home">
+    <div  id="home">
       <view-box>
         <panel :list="dataList"></panel>
 
